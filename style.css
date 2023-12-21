@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', 'Doodle', 'Shadow';
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    background-color: #0b2545;
+    color: #80ced7;
+}
+header button{
+    border: none;
+    background-color: transparent;
+    color: #f1f4f5;
+}
+header button:hover{
+    cursor: pointer;
+}
+img{
+    width: 450px;
+    height: 250px;
+}
+img:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 0.2s ease-in-out 0s;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0px;
+    flex-wrap: wrap;
+}
+.scoreboard{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0px;
+}
+.result{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h2{
+    font-size: 28px;
+    font-weight: 500;
+}
+.message{
+    padding: 10px;
+    font-size: 34px;
+    font-weight: 500;
+    background-color: #a640e5;
+    border-radius: 15px;
+}
+span{
+    font-size: 29px;
+    font-weight: 500;
+}
+.clear{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clear button{
+    padding: 10px;
+    font-size: 24px;
+    border: none;
+    border-radius: 15px;
+    background-color: #fedd55;
+    color: #080808;
+}
+/* for dark & light mode classes */
+.light{
+    background-color: #f5f5f5;
+    color: #062427;
+    header{
+        background-color: #0b2545;
+    }
+    svg{
+        fill: rgb(255, 255, 255);
+        height: 2rem;
+        width: 2.5rem;
+    }
+}
+.dark{
+    background-color: #080808;
+    color: #f1f4f5;
+    header{
+        color: #003249;
+        background-color: #eef4ed;
+    }
+    header button{
+        color: #0c9494;
+    }
+    svg{
+        fill: rgb(0, 0, 0);
+        height: 2rem;
+        width: 2.5rem;
+    }
+}
+/* responsiveness */
+@media (max-width:480px) {
+    h1{
+        font-size: 22px;
+    }
+    img{
+        width: 250px;
+        height: 150px;
+    }
+    .message{
+        font-size: 22px;
+        font-weight: 500;
+        
+    }
+    .scoreboard{
+        padding: 5px 0px;
+    }
+    .container{
+        padding: 5px 0px;
+    }
+}
